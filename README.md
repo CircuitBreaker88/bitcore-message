@@ -1,29 +1,29 @@
-# Innova Message Verification and Signing for Bitcore-Innova
+# MoneyByte Message Verification and Signing for Bitcore-MoneyByte
 
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-message-innova.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-message-innova)
-[![Build Status](https://img.shields.io/travis/innovacoin/bitcore-message-innova.svg?branch=master&style=flat-square)](https://travis-ci.org/innovacoin/bitcore-message-innova)
-[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-message-innova.svg?style=flat-square)](https://coveralls.io/r/innovacoin/bitcore-message-innova?branch=master)
+[![NPM Package](https://img.shields.io/npm/v/bitcore-message.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-message)
+[![Build Status](https://img.shields.io/travis/MoneyByte/bitcore-message.svg?branch=master&style=flat-square)](https://travis-ci.org/MoneyByte/bitcore-message)
+[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-message.svg?style=flat-square)](https://coveralls.io/r/MoneyByte/bitcore-message?branch=master)
 
-bitcore-message-innova adds support for verifying and signing innova messages in [Node.js](http://nodejs.org/) and web browsers.
+bitcore-message adds support for verifying and signing moneybyte messages in [Node.js](http://nodejs.org/) and web browsers.
 
-See [the main bitcore-innova repo](https://github.com/innovacoin/bitcore-innova) for more information.
+See [the main bitcore repo](https://github.com/MoneyByte/bitcore) for more information.
 
 ## Getting Started
 
 ```sh
-npm install bitcore-message-innova
+npm install bitcore-message
 ```
 
 ```sh
-bower install bitcore-message-innova
+bower install bitcore-message
 ```
 
 To sign a message:
 
 ```javascript
-var bitcore = require('bitcore-lib-innova');
-var Message = require('bitcore-message-innova');
+var bitcore = require('bitcore-lib');
+var Message = require('bitcore-message');
 
 var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
 var signature = Message('hello, world').sign(privateKey);
@@ -39,7 +39,7 @@ var verified = Message('hello, world').verify(address, signature);
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/innovacoin/bitcore-innova/blob/master/CONTRIBUTING.md) on the main bitcore-innova repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/MoneyByte/bitcore/blob/master/CONTRIBUTING.md) on the main bitcore repo for information about how to contribute.
 
 ## License
 

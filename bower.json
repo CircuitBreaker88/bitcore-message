@@ -1,8 +1,8 @@
 {
-  "name": "bitcore-message-innova",
+  "name": "bitcore-message",
   "main": "./bitcore-message.min.js",
   "version": "1.0.4",
-  "homepage": "https://github.com/innovacoin/bitcore-message-innova",
+  "homepage": "https://github.com/MoneyByte/bitcore-message",
   "authors": [
     "BitPay"
   ],
